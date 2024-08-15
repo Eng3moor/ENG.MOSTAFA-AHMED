@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENG.MOSTAFA AHMED</title>
+    <style>
+        /* نفس الشيفرة الموجودة في الصفحة الرئيسية */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-weight: 900;
+            overflow: hidden; /* إخفاء التمرير في الصفحة بأكملها */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            padding-top: 20px;
+            overflow-x: hidden; /* لمنع التمرير الأفقي */
+        }
+
+        .background-filler {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #3533cd;
+            z-index: -2;
+        }
+
+        .background-image {
+            background-image: url('mmm.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            color: #ffffff;
+            transition: color 0.3s ease;
+            position: relative;
+            margin-top: 0;
+            padding-top: 20px;
+        }
+
+        h1:hover {
+            color: #859ee8;
+        }
+
+        .content {
+            margin-top: 50px; /* تقليل المسافة في الأعلى لرفع العنصر */
+            margin-bottom: 20px; /* إضافة مسافة من الأسفل */
+            background-color: rgba(87, 157, 243, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-height: 80vh; /* إضافة الحد الأقصى للارتفاع ليظهر شريط التمرير عند الحاجة */
+            overflow-y: auto; /* إضافة شريط التمرير العمودي */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* إضافة ظل لتحسين المظهر */
+        }
+
+        /* Styles for media container */
+        .media-container {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            max-height: 70vh; /* تحديد الحد الأقصى للارتفاع للحاوية */
+            overflow-y: auto; /* تفعيل التمرير العمودي */
+            width: 80%;
+        }
+
+        .media-container img, 
+        .media-container video {
+            width: 90%; /* تصغير العرض إلى 90% */
+            max-width: 600px; /* تقليل الحد الأقصى للعرض إلى 600px */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Social links styles */
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: absolute;
+            bottom: 20px; /* تثبيت الروابط في الأسفل */
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #859ee8;
+        }
+    </style>
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background-filler"></div>
+    <div class="background-image"></div>
+
+    <h1>ENG.MOSTAFA AHMED</h1>
+
+    <!-- Media content -->
+    <div class="media-container">
+        <img src="11.jpg" alt="Image 1">
+        <img src="22.jpg" alt="Image 2">
+        <img src="33.jpg" alt="Image 3">
+        <img src="44.jpg" alt="Image 4">
+        <img src="55.jpg" alt="Image 5">
+        <img src="66.jpg" alt="Image 6">
+        <img src="77.jpg" alt="Image 7">
+        <img src="88.jpg" alt="Image 8">
+        <img src="99.jpg" alt="Image 9">
+        <img src="1010.jpg" alt="Image 10">
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=100020404963429" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/mustafa_a777med?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Background music -->
+    <audio autoplay loop>
+        <source src="om.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
